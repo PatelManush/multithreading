@@ -1,0 +1,23 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<pthread.h>
+
+void *myhtread (void *first)
+
+{
+printf("this is my thread\n");
+return NULL;
+
+
+}
+
+int main()
+
+{
+pthread_t thr_d;
+printf("instructions befroe thread runs\n");
+pthread_create(&thr_d, NULL, mythread, NULL);
+printf("thread ended\n");
+return 0;
+
+}
