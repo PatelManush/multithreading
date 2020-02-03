@@ -15,7 +15,7 @@ int main()
 
 {
 pthread_t thr_d;
-printf("instructions befroe thread runs\n");
+printf("instructions before thread runs\n");
 pthread_create(&thr_d, NULL, mythread, NULL);
 printf("thread ended\n");
 return 0;
